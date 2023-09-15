@@ -7,6 +7,7 @@ import "leaflet-control-geocoder/dist/Control.Geocoder.js"
 import Geocoder from './LocGeocoder'
 import Llrouting from './Llrouting'
 import axios from 'axios'
+import "./Maps.css";
 const Maps = () => {
   const [currLoc,setcurrLoc]=useState({});
     useEffect(()=>{
@@ -23,8 +24,8 @@ const Maps = () => {
    var latlong=[currLoc.latitude,currLoc.longitude]
 
   return (
-    <div className='bg-bgcolor h-[100vh] pt-10'>
-    <MapContainer className='h-[75vh]  mx-10 rounded-lg border border-accent ' center={[19.2183,72.9781]} zoom={17} scrollWheelZoom={false}>
+    <div className='bg-bgcolor h-[100vh] pt-20'>
+    <MapContainer id='container'className='h-[85vh]  mx-10 rounded-lg border border-accent ' center={[19.2183,72.9781]} zoom={17} scrollWheelZoom={false}>
   <TileLayer
     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
