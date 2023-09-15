@@ -6,7 +6,7 @@ export default {
     extend: {colors:
     {
       bgcolor:'0D1117',
-      accent:'2F81F7'
+      accent:'2F81F7',
     }},
   },
   plugins: [],
