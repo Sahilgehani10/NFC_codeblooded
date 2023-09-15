@@ -3,7 +3,11 @@ export default {
   content: ["./index.html",
   "./src/**/*.{js,ts,jsx,tsx}",],
   theme: {
-    extend: {},
+    extend: {colors:
+    {
+      bgcolor:'0D1117',
+      accent:'2F81F7'
+    }},
   },
   plugins: [],
 }
