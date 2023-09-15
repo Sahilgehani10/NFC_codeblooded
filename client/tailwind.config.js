@@ -5,13 +5,15 @@ export default {
   theme: {
     extend: {colors:
     {
-      bgcolor:'0D1117',
-      accent:'2F81F7',
+      bgcolor:'#0D1117',
+      accent:'#2F81F7',
       backgroundImage: {
         'landingBg': "url('/src/assets/image.png')",
       }
     }},
   },
-  plugins: [],
+  plugins: [
+    
+  ],
 }
 

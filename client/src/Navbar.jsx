@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { HiOutlineSearch } from "react-icons/hi";
 import { SlMenu } from "react-icons/sl";
 import { VscChromeClose } from "react-icons/vsc";
+import { Link } from "react-router-dom";
 //import { useNavigate, useLocation } from "react-router-dom";
 
 //import ContentWrapper from "../contentWrapper/ContentWrapper";
@@ -46,17 +47,17 @@ const Navbar = () => {
 
   return (
     <header className={`header ${mobileMenu ? "mobileView" : ""} ${show}`}>
-      <div className="navbar contentWrapper">
+      <div className="navbar contentWrapper ">
         <div className="logo">
-          <img className="h-[5rem] w-full ml-4" src={logo} alt="" />
+          <Link to={'/'}><img className="h-[5rem] w-full ml-4" src={logo} alt="" /></Link>
         </div>
 
         <div className="ml-[65vw]">
           <ul className="menuItems">
-            <li className="menuItem">Home</li>
+            <li className="menuItem"><Link to={'/'}>Home</Link></li>
             <li className="menuItem">Features</li>
             <li className="menuItem">
-              <a href="/login">Login</a>
+              <Link to={'/login'}>Login</Link>
             </li>
           </ul>
         </div>
