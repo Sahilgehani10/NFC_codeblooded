@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 const App = () => {
   return (
-    <div className='bg-red-500'>test</div>
-  )
-}
+    <div className="h-[1000px] relative">
+      <Navbar />
+      <footer>
+        <Footer />
+      </footer>
+    </div>
+  );
+};
 
-export default App
+export default App;
