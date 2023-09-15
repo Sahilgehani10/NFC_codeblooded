@@ -1,8 +1,12 @@
 import React from 'react'
+import Maps from './pages/maps'
 
 const App = () => {
   return (
-    <div className='bg-red-500'>test</div>
+    <div>
+  <Maps />
+  
+  </div>
   )
 }
 
