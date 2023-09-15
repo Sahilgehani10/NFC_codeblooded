@@ -1,14 +1,12 @@
 import React from "react";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
+import Landing from "./Landing";
+
 
 const App = () => {
   return (
-    <div className="h-[1000px] relative">
-      <Navbar />
-      <footer>
-        <Footer />
-      </footer>
+    <div className="bg-[#0d1117]">
+      <Landing />
     </div>
   );
 };

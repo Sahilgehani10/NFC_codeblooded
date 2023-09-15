@@ -10,7 +10,7 @@ import "./Footer.scss";
 
 const Footer = () => {
   return (
-    <footer className="footer absolute bottom-0 w-full">
+    <footer className="footer w-full">
       <ul className="menuItems">
         <li className="menuItem">Terms Of Use</li>
         <li className="menuItem">Privacy-Policy</li>
