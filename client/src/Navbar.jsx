@@ -47,8 +47,8 @@ const Navbar = () => {
 
   return (
     <header className={`header ${mobileMenu ? "mobileView" : ""} ${show}`}>
-      <div className="navbar contentWrapper ">
-        <div className="logo">
+      <div className="navbar flex justify-between contentWrapper ">
+        <div className="logo flex ">
           <Link to={'/'}><img className="h-[5rem] w-full ml-4" src={logo} alt="" /></Link>
         </div>
 
