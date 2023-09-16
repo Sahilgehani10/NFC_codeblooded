@@ -49,15 +49,19 @@ const Navbar = () => {
     <header className={`header ${mobileMenu ? "mobileView" : ""} ${show}`}>
       <div className="navbar contentWrapper ">
         <div className="logo">
-          <Link to={'/'}><img className="h-[5rem] w-full ml-4" src={logo} alt="" /></Link>
+          <Link to={"/"}>
+            <img className="h-[5rem] w-full ml-4" src={logo} alt="" />
+          </Link>
         </div>
 
         <div className="ml-[65vw]">
           <ul className="menuItems">
-            <li className="menuItem"><Link to={'/'}>Home</Link></li>
+            <li className="menuItem">
+              <Link to={"/"}>Home</Link>
+            </li>
             <li className="menuItem">Features</li>
             <li className="menuItem">
-              <Link to={'/login'}>Login</Link>
+              <Link to={"/login"}>Login</Link>
             </li>
           </ul>
         </div>
