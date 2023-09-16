@@ -1,5 +1,7 @@
 import React from 'react'
 import CardTemplate from './CardTemplate';
+import {easeIn, motion} from 'framer-motion'
+import { slideIn, staggerContainer } from "./motion/motion"
 
 const Cards = () => {
     const data = [
@@ -25,13 +27,17 @@ const Cards = () => {
         },
       ];
   return (
-    <div className=' flex max-md:flex-col max-md:justify-center w-[full] mt-[10rem]  align-center justify-around  bg-[#0d1117] text-white' >
+   <motion.div variants={staggerContainer} viewport={{once:true,amount:0.25}} >
+       <div className=' flex max-md:flex-col max-md:justify-center w-[full] mt-[10rem]  align-center justify-around  bg-[#0d1117] text-white' >
         {
           data.map((i)=>(
-            <CardTemplate img={i.img} name={i.name} message={i.description} />
+            <motion.div variants={slideIn("up", easeIn,0.25,0.25)} initial={"hidden"} whileInView={'show'} >
+              <CardTemplate  img={i.img} name={i.name} message={i.description} />
+            </motion.div>
           ))
         }
     </div>
+   </motion.div>
   )
 }
 
