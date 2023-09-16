@@ -34,8 +34,8 @@ export default function LoginPage(){
             <div className="mb-54">
             <h1 className="text-4xl text-center mb-4">Login</h1>
             <form className="max-w-md mx-auto" onSubmit={()=>navigate("/homepage")}>
-                <input type="email" placeholder="your@email.com" value={email} onChange={ev=>SetEmail(ev.target.value)} />
-                <input type="password" placeholder="password" value={password} onChange={ev=>SetPassword(ev.target.value)} />
+                <input type="email" placeholder="your@email.com" value={email} required onChange={ev=>SetEmail(ev.target.value)} />
+                <input type="password" placeholder="password" value={password} required onChange={ev=>SetPassword(ev.target.value)} />
                 <button className="primary">Login</button>
                 <div className="text-center py-2">
                     dont have an account yet?<Link to={"/register"} className="text-accent underline">Register Now</Link>
