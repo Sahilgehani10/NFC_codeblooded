@@ -55,7 +55,7 @@ const Navbar = () => {
         <div className="ml-[65vw]">
           <ul className="menuItems">
             <li className="menuItem"><Link to={'/'}>Home</Link></li>
-            <li className="menuItem">Features</li>
+            <li className="menuItem"><Link to={"/features"}>Features</Link></li>
             <li className="menuItem">
               <Link to={'/login'}>Login</Link>
             </li>
