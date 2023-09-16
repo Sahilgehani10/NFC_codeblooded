@@ -6,11 +6,10 @@ export default function RegisterPage() {
   const [name, SetName] = useState("");
   const [email, SetEmail] = useState("");
   const [password, SetPassword] = useState("");
-  const [number, setNumber] = useState("");
   async function registerUser(ev) {
     ev.preventDefault();
     try {
-      await axios.post("/register", {
+      await axios.post("/urbanglide/v1/register", {
         name,
         email,
         password,
@@ -37,12 +36,6 @@ export default function RegisterPage() {
             placeholder="your@email.com"
             value={email}
             onChange={(ev) => SetEmail(ev.target.value)}
-          />
-          <input
-            type="tel"
-            placeholder="1234567890"
-            value={number}
-            onChange={(ev) => setNumber(ev.target.value)}
           />
           <input
             type="password"

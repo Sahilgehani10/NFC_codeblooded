@@ -10,7 +10,7 @@ export default function LoginPage() {
   async function handleLoginSubmit(ev) {
     ev.preventDefault();
     try {
-      const { data } = await axios.post("/login", { email, password });
+      const { data } = await axios.post("urbanglide/v1/login", { email, password });
       setUser(data);
       alert("login succesful");
       SetRedirect(true);
