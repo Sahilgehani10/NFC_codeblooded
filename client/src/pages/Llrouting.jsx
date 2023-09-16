@@ -30,7 +30,7 @@ const Llrouting = () => {
             
             L.marker([e.latlng.lat,e.latlng.lng]).addTo(map)
         L.Routing.control({
-            waypoints:[L.latLng(19.0790,72.9080),L.latLng(e.latlng.lat,e.latlng.lng)],
+            waypoints:[L.latLng(19.18,72.97),L.latLng(e.latlng.lat,e.latlng.lng)],
             lineOptions:{
                 styles:[{
                     color:"blue",

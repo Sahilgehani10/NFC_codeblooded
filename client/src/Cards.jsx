@@ -11,21 +11,23 @@ const Cards = () => {
       name: 1,
       img: null,
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
+      "Guaranteed AC rides"
+        ,
     },
 
     {
       name: 2,
-      img: null,
+      img:null
+    ,
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
+        "Helps save the environment in the wake of global warming and also helps save petrol cost",
     },
 
     {
       name: 3,
       img: null,
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
+      "Helps save your time by reducing traffic on roads leading for a better daily schedule",
     },
   ];
   return (
