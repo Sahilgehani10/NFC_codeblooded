@@ -33,7 +33,7 @@ const Cards = () => {
       variants={staggerContainer}
       viewport={{ once: true, amount: 0.25 }}
     >
-      <div className=" flex max-md:flex-col max-md:justify-center w-[full] mt-[10rem]  align-center justify-around  bg-[#0d1117] text-white">
+      <div className=" flex max-md:flex-col max-md:justify-center w-[full] pt-[10rem]  align-center justify-around  bg-[#0d1117] text-white">
         {data.map((i) => (
           <motion.div
             variants={slideIn("up", easeIn, 0.25, 0.25)}
