@@ -2,11 +2,11 @@ import React from 'react'
 import Cards from "./Cards"
 import styles from "./motion/styleDes"
 import {motion} from "framer-motion"
-import { fadeIn, slideIn } from './motion/motion'
+import { fadeIn} from './motion/motion'
 
 const Landing = () => {
   return (
-    <div  className="bg-[#0d1117] scrollbar-hide">
+    <div  className="bg-[#0d1117]">
     <div className="relative">
     <div className='h-[100vh] w-full relative'>
         <div className='flex flex-col justify-center items-center absolute top-0 w-[inherit] h-[inherit] bg-gradient-to-b from-[rgba(36,42,46,0.8)] to-[rgba(36,42,46,0.8)]'>
