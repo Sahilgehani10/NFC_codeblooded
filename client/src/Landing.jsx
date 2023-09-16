@@ -19,7 +19,6 @@ const Landing = () => {
         <img src={"./src/assets/image.png"} className='h-[100vh] w-full'  />
     </div>
     <Cards />
-    
   </div>
   </div>
   )
