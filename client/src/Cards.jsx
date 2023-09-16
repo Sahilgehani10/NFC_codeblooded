@@ -11,6 +11,7 @@ import { slideIn, staggerContainer } from "./motion/motion"
 >>>>>>> 48ad6b6a06822ac85b596863a48cb05a340019f8
 
 
+
 const Cards = () => {
 <<<<<<< HEAD
   const data = [
